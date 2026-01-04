@@ -11,12 +11,17 @@ const rates = {
 function App() {
   // Source currency
   const [from, setFrom] = useState("USD");
+  const [to, setTo] = useState("EUR");
 
   // User input amount
   const [amount, setAmount] = useState(1);
 
+  const [to, setTo] = useState("EUR");
+
   // Recalculate amounts when "from" or "amount" changes
   const convertedAmount = useMemo(() => {
+    console.log("recalculation");
+
     const fromRate = rates[from];
     const baseAmount = amount / fromRate;
 
@@ -43,7 +48,7 @@ function App() {
           <option>JPY</option>
         </select>
         <label>Target Currency :</label>
-        <select>
+        <select value={to} onChange={(e) => setTo(e.target.value)}>
           <option>USD</option>
           <option>EUR</option>
           <option>GBP</option>
