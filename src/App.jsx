@@ -53,7 +53,9 @@ function App() {
           <option>JPY</option>
         </select>
         {/* Display converted amount for the selected target currency */}
-        <p>Converted Amount: {convertedAmount[to]}</p>
+        <p>
+          Converted Amount: {convertedAmount[to].toFixed(2)} {to}
+        </p>
       </div>
     </div>
   );
