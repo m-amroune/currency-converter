@@ -16,8 +16,6 @@ function App() {
   // User input amount
   const [amount, setAmount] = useState(1);
 
-  const [to, setTo] = useState("EUR");
-
   // Recalculate amounts when "from" or "amount" changes
   const convertedAmount = useMemo(() => {
     console.log("recalculation");
@@ -54,7 +52,8 @@ function App() {
           <option>GBP</option>
           <option>JPY</option>
         </select>
-        <p>Converted Amount : </p>
+        {/* Display converted amount for the selected target currency */}
+        <p>Converted Amount: {convertedAmount[to]}</p>
       </div>
     </div>
   );
