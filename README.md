@@ -1,16 +1,34 @@
-# React + Vite
+# Project : Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+**Objective** : Build a currency converter application using React. The app allows users to enter an amount, choose a source currency and a target currency, and display the converted result. The project follows FreeCodeCamp’s front-end certification requirements and includes memoization to avoid unnecessary recalculations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## User Stories
 
-## React Compiler
+- User Story #1: Your CurrencyConverter component should render an input element to accept the amount to be converted from.
+- User Story #2: Your input element should accept numbers.
+- User Story #3: Your CurrencyConverter component should render two select elements to choose the currency to convert from and to.
+- User Story #4: Your select element should include options for at least USD, EUR, GBP, and JPY. You may use any exchange rate, provided there is no one-to-one mapping between the currencies.
+- User Story #5: Your CurrencyConverter component should memoize the calculation of the converted amounts for the from currency such that a change in the to select option will not recalculate the converted amounts.
+- User Story #6: Your CurrencyConverter component should render an element showing the converted amount in the format `XX.XX CCC`, where `XX.XX` is the converted amount and `CCC` is the currency code.
+- User Story #7: The converted amount should be rounded to two decimal places.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Langages and Technologies
 
-## Expanding the ESLint configuration
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=flat)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+```bash
+git clone https://github.com/m-amroune/currency-converter.git
+cd currency-converter
+npm install
+npm run dev
+
+
+
